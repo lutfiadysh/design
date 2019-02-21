@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+	<title></title>
+</head>
+<body>
+	<nav class="myHeader">
+		<div class="nav-wrapper transparent">
+			<a href="index.html" class="brand-logo"><img src="img/logo.png"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="#section1">Home</a></li>
+		        <li><a href="badges.html">About Us</a></li>
+		        <li><a href="collapsible.html">Contact Us</a></li>
+      		</ul>
+		</div>
+	</nav>
+		<nav id="section1" class="nav-extended teal section1">
+		  <div class="nav-content row content-s1">
+		      <span class="nav-title left-align col s6 span-s1"><img class="gambar" src="img/store.png"></span>
+		      <div class="col s6">
+		      	<h3 class="title-s1">The easier way to start yout business in indonesia</h3>
+		      	<div class="paragraf-s1">
+		      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		      	</div>
+		      </div>
+		      <a href="#section2" class="waves-effect waves-light btn-medium btn">
+		      GET STARTED
+      		  </a>
+    	  </div>
+	</nav>
+
+	<nav id="section2" class="nav-extended  light-blue darken-1 section2">
+		  <div class="nav-content row nav-s2">
+		  	  <div class="col s6">
+		      	<h3 class="title-s2">JOIN WITH US NOW!</h3>
+		      	<div class="paragraf-s2">
+		      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		      	</div>
+		      </div>
+		      <span class="nav-title left-align col s6 span-s2"><img class="gambar-s2" src="img/buah.png"></span>
+    	  </div>
+	</nav>
+
+	 <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Find Us On!</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="instagram.com/lutfiadysh"><img class="sosmed" src="img/sosmed/ig.png"></a></li>
+                  <li><a class="grey-text text-lighten-3" href="linked.id/lutfiadysh"><img class="sosmed" src="img/sosmed/lk.png"></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Copyright All right reserved
+            <a class="grey-text text-lighten-4 right" href="#!">Designed by Lutfi Ardiansyah</a>
+            </div>
+          </div>
+        </footer>
+
+</body>
+<script type="text/javascript">
+	$(window).scroll(function() {
+	  if ($(document).scrollTop() > 50) {
+	    $('.myHeader').addClass('transparent');
+	  } else {
+	    $('.myHeader').removeClass('transparent');
+	  }
+	});
+</script>
+</html>
